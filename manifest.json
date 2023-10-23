@@ -1,0 +1,33 @@
+{
+    "manifest_version": 3,
+    "name": "Lantern SANDBOX",
+    "description": "DO NOT APPROVE THIS PACKAGE. IT IS NOT FOR DISTRIBUTION. THE DEV MADE AN OOPSIE.",
+    "version": "1.1.0",
+    "permissions": ["tabs", "storage"],
+    "icons":{
+        "48": "assets/icons/ico48.png",
+        "128": "assets/icons/ico128.png"
+    },
+    "action": {
+        "default_popup": "popup/popup.html"
+    },
+    "background": {
+        "service_worker": "worker.js"
+    },
+    "commands": {
+        "bookmark": {
+            "suggested_key": {
+                "default": "Alt+D",
+                "mac": "MacCtrl+D"
+            },
+            "description": "Signpost the current tab"
+        },
+        "bookmark_all": {
+            "suggested_key": {
+                "default": "Alt+Shift+D",
+                "mac": "MacCtrl+Shift+D"
+            },
+            "description": "Signpost all current tabs in window"
+        }
+    }
+}
